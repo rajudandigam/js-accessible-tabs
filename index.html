@@ -15,24 +15,28 @@
         <h2>Tabs</h2>
         <section role="tab" class="tab-header" id="tabHeader">
           <ul>
-            <li class="active" data-id="section1"><a href="">Section 1</a></li>
-            <li data-id="section2"><a href="">Section 2</a></li>
-            <li data-id="section3"><a href="">Section 3</a></li>
-            <li data-id="section4"><a href="">Section 4</a></li>
+            <li class="active" aria-selected=true><a href="#section1">Section 1</a></li>
+            <li><a href="#section2" tabindex=-1>Section 2</a></li>
+            <li><a href="#section3" tabindex=-1>Section 3</a></li>
+            <li><a href="#section4" tabindex=-1>Section 4</a></li>
           </ul>
         </section>
         <section class="tab-content" id="tabContent">
-          <section id="section1" class="active">
+          <section id="section1" class="active" aria-hidden="false">
             I am from section one.
+            <a href="">I am linke here</a>
           </section>
-          <section id="section2">
+          <section id="section2" aria-hidden="true">
             I am from section two.
+            <a href="">I am linke here</a>
           </section>
-          <section id="section3">
+          <section id="section3" aria-hidden="true">
             I am from section three.
+            <a href="">I am linke here</a>
           </section>
-          <section id="section4">
+          <section id="section4" aria-hidden="true">
             I am from section four.
+            <a href="">I am linke here</a>
           </section>
         </section>
     </article>
