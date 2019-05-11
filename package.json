@@ -1,0 +1,14 @@
+{
+  "name": "js-accessible-tabs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "devDependencies": {
+    "live-server": "~1.2.0"
+  },
+  "repository": "https://github.com/rajudandigam/js-accessible-tabs.git",
+  "author": "Raju Dandigam <raju0574@gmail.com>",
+  "license": "MIT"
+}
