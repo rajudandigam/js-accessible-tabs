@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" viewport="width=device-width, initial-scale=1">
 	<title>Accessible Tabs Component</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="src/main.css">
   <script src="src/index.js" type="text/javascript" defer></script>
 </head>
 <body>
@@ -15,10 +15,10 @@
         <h2>Tabs</h2>
         <section role="tab" class="tab-header" id="tabHeader">
           <ul>
-            <li class="active"><a href="">Section 1</a></li>
-            <li><a href="">Section 2</a></li>
-            <li><a href="">Section 3</a></li>
-            <li><a href="">Section 4</a></li>
+            <li class="active" data-id="section1"><a href="">Section 1</a></li>
+            <li data-id="section2"><a href="">Section 2</a></li>
+            <li data-id="section3"><a href="">Section 3</a></li>
+            <li data-id="section4"><a href="">Section 4</a></li>
           </ul>
         </section>
         <section class="tab-content" id="tabContent">
