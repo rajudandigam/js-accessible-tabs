@@ -16,13 +16,21 @@
 .tab-header > ul > li {
   flex-grow: 1;
   list-style-type: none;
-  padding: 20px;
   text-align: center;
+}
+
+.tab-header > ul > li > a {
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 .tab-header .active {
   background-color: blue;
   position: relative;
+  transition: all 0.2s ease-in 0.2s;
 }
 
 .tab-header .active::after {
@@ -38,6 +46,7 @@
 
 .tab-content {
   border: 1px solid black;
+  min-height: 400px;
 }
 
 .tab-content > section {
