@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" viewport="width=device-width, initial-scale=1">
+	<title>Accessible Tabs Component</title>
+  <link rel="stylesheet" type="text/css" href="src/main.css">
+  <script src="src/index.js" type="text/javascript" defer></script>
+</head>
+<body>
+  <main class="main">
+    <header>
+      <h1>Accessible Tabs Component</h1>
+    </header>
+    <article>
+        <h2>Tabs</h2>
+        <section role="tab" class="tab-header" id="tabHeader">
+          <ul>
+            <li class="active" data-id="section1"><a href="">Section 1</a></li>
+            <li data-id="section2"><a href="">Section 2</a></li>
+            <li data-id="section3"><a href="">Section 3</a></li>
+            <li data-id="section4"><a href="">Section 4</a></li>
+          </ul>
+        </section>
+        <section class="tab-content" id="tabContent">
+          <section id="section1" class="active">
+            I am from section one.
+          </section>
+          <section id="section2">
+            I am from section two.
+          </section>
+          <section id="section3">
+            I am from section three.
+          </section>
+          <section id="section4">
+            I am from section four.
+          </section>
+        </section>
+    </article>
+    <footer>
+      Copyrights Reserved @Raju Dandigam
+    </footer>
+  </main>
+</body>
+</html>

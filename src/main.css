@@ -1,0 +1,50 @@
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.tab-header {
+  border: 1px solid black;
+}
+
+.tab-header > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-header > ul > li {
+  flex-grow: 1;
+  list-style-type: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.tab-header .active {
+  background-color: blue;
+  position: relative;
+}
+
+.tab-header .active::after {
+  content: "";
+  position: absolute;
+  top: 58px;
+  left: 40%;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid blue;
+  text-align: center;
+}
+
+.tab-content {
+  border: 1px solid black;
+}
+
+.tab-content > section {
+  display: none;
+}
+
+.tab-content > section.active {
+  display: block;
+  padding: 20px;
+}
