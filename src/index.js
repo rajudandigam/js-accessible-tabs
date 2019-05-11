@@ -9,8 +9,7 @@ function onLoad() {
     event.preventDefault();
 
     const target = event.target;
-    const li = target.href ? target.parentNode : target; 
-    const id = li.getAttribute('data-id');
+    const id = target.hash ? target.hash.slice(1) : target.children[0].hash.slice(1); 
 
     tabContents.forEach((elem) => {
       if(elem.id === id) {
